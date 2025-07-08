@@ -45,7 +45,7 @@ export async function SiteFooter({locale, ctx }: SiteFooterProps)
                 <Image src={"/assets/cohnreznick.png"} width={200} height={35} alt="Moseybank Logo" unoptimized />
             </div>
             <div className="flex flex-col lg:flex-row gap-2 lg:gap-6 text-sm items-center justify-center">
-                <p>{ footerData?.copyright ?? '&copy; Optimizely. All rights reserved'}</p>
+                {/* <p>{ footerData?.copyright ?? '&copy; Optimizely. All rights reserved'}</p> */}
                 <ul className="flex flex-row gap-6">
                     {footerData?.legalLinks?.map(linkItem => linkItem && (
                         <li key={createListKey(linkItem)}><CmsLink href={ linkItem } /></li>
